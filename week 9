@@ -1,1 +1,23 @@
-week.1
+1.
+# Define class Box
+class Box:
+    def __init__(self, length, width, height):
+        self.length = length
+        self.width = width
+        self.height = height
+
+    # Function to calculate volume
+    def volume(self):
+        return self.length * self.width * self.height
+
+
+# Take user input
+length = float(input("Enter length of the box: "))
+width = float(input("Enter width of the box: "))
+height = float(input("Enter height of the box: "))
+
+# Create object
+box1 = Box(length, width, height)
+
+# Print volume
+print("Volume of the box is:", box1.volume())
