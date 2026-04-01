@@ -1,0 +1,5 @@
+Books: 36, Rate: 200
+Pens: 116, Rate: 20
+Bags: 25, Rate: 300
+Notebook: 50, Rate: 120
+Total Price: 23020

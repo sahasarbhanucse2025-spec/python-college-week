@@ -1,35 +1,18 @@
-# # Step 1: Create a file and write text
-# source_file = input("Enter source file name: ")
+# Source and destination file
+source = input("Enter source file name: ")
+destination = input("Enter destination file name: ")
 
-# file = open(source_file, "w")
-# text = input("Enter text to write in the file: ")
-# file.write(text)
-# file.close()
+# Open source file
+f1 = open(source, "r")
 
-# # Step 2: Read the file
-# with open(source_file, "r") as f:
-#     content = f.read()
+# Read content and convert to lowercase
+data = f1.read().lower()
 
-# print("\nOriginal Content:")
-# print(content)
+f1.close()
 
-# # Step 3: Convert to lowercase
-# content = content.lower()
+# Write into destination file
+f2 = open(destination, "w")
+f2.write(data)
+f2.close()
 
-# # Step 4: Copy to another file
-# destination_file = input("\nEnter destination file name: ")
-
-# with open(destination_file, "w") as f2:
-#     f2.write(content)
-
-# print("\nFile copied successfully with lowercase letters.")
-
-
-
-
-
-# Print 500 😘 emojis in a column
-
-for i in range(500):
-    print("😘")
-    
+print("File copied with lowercase conversion!")
